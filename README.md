@@ -1,5 +1,5 @@
 # Pitch-Perfect
-### iOS Development Nanodegree
+### iOS Development Nanodegree Project
 
 Pitch Perfect is an application written in swift built for Udacity's iOS Developer Nanodegree course to help me better understand working with AVFoundation.
 
