@@ -5,7 +5,7 @@ Pitch Perfect is an application written in swift built for Udacity's iOS Develop
 
 The App allows users to Record a sound using the Device’s Microphone. The user can then play the recorded sound back with six different Sound Modulations:  Slow, Fast, Chipmunk, Darth Vader, Reverb, and Echo effect.
 
-Basic features based on the rubric found in here
+Basic features based on the rubric found in [here](https://review.udacity.com/#!/rubrics/19/view)
 
 ### Implementation
 
