@@ -46,7 +46,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
         
         let session = AVAudioSession.sharedInstance()
-        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        try! session.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playAndRecord)))
         
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self
@@ -88,7 +88,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
-        pauseResumeButton.setImage(UIImage(named: "Pause"), for: UIControlState())
+        pauseResumeButton.setImage(UIImage(named: "Pause"), for: UIControl.State())
     }
     
     // Connect button to action to pause/resume recording
@@ -97,11 +97,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         if (audioRecorder.isRecording) {
             audioRecorder.pause()
             recordingLabel.text = String("Press Play To Continue Recording")
-            pauseResumeButton.setImage(UIImage(named: "Play"), for: UIControlState())
+            pauseResumeButton.setImage(UIImage(named: "Play"), for: UIControl.State())
         } else {
             audioRecorder.record()
             recordingLabel.text = String("Recording...")
-            pauseResumeButton.setImage(UIImage(named: "Pause"), for: UIControlState())
+            pauseResumeButton.setImage(UIImage(named: "Pause"), for: UIControl.State())
             }
         }
 }
@@ -110,3 +110,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
+}

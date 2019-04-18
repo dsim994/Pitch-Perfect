@@ -28,7 +28,9 @@ class PlaySoundsViewController: UIViewController {
         audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl as URL)
         
     do {
-        try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
+        try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback,
+            options: AVAudioSession.CategoryOptions.mixWithOthers)
+        try AVAudioSession.sharedInstance().setActive(true)
     } catch let error as NSError {
         print(error.localizedDescription)
         }
@@ -138,15 +140,5 @@ class PlaySoundsViewController: UIViewController {
     }
 }
     
-
-
-
-
-
-
-
-
-
-
 
 
