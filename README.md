@@ -1,11 +1,9 @@
 # Pitch-Perfect
 ### iOS Development Nanodegree Project
 
-Pitch Perfect is an application written in swift built for Udacity's iOS Developer Nanodegree course to help me better understand working with AVFoundation.
 
-The App allows users to Record a sound using the Device’s Microphone. The user can then play the recorded sound back with six different Sound Modulations:  Slow, Fast, Chipmunk, Darth Vader, Reverb, and Echo effect.
+Pitch Perfect is a swift application that allow users to Record a sound using the Device’s Microphone. The user can then play the recorded sound back with six different Sound Modulations:  Slow, Fast, Chipmunk, Darth Vader, Reverb, and Echo effect.
 
-Basic features based on the rubric found in [here](https://review.udacity.com/#!/rubrics/19/view)
 
  <img src="ScreenShots/IMG_0219.PNG" height="500">  <img src="ScreenShots/IMG_0223.PNG" height="500">  <img src="ScreenShots/IMG_0225.PNG" height="500">
 
@@ -17,8 +15,8 @@ Pitch Perfect has two Scenes:
 
 * __PlaySoundsViewController__ : Contains six buttons to play the recorded sound file with different effects related to the button image. A stop button is displayed at the bottom which ends your session and directs you to the recording screen.
 
-The application uses code from AVFoundation to record sounds from the microphone (AVAudioRecorder) and play recorded audio with effects (AVAudioPlayer, AVAudioEngine).
+This application uses code from AVFoundation to record the sounds from the microphone (AVAudioRecorder) and play recorded audio with effects (AVAudioPlayer, AVAudioEngine).
 
 ### Requirements
-* Xcode 8 Above
-* Swift 3.0
+* Xcode 10
+* Swift 5.0
