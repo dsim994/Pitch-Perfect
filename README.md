@@ -1,6 +1,6 @@
 # Pitch-Perfect
 
-Swift application that uses code from AVFoundation to record the sounds from the microphone (AVAudioRecorder) and play recorded audio with effects (AVAudioPlayer, AVAudioEngine). The six different sound modulations are Slow, Fast, Chipmunk, Darth Varder, Reverb, and Echo effect.
+Swift application that uses code from AVFoundation to record sounds from the microphone (AVAudioRecorder) and play recorded audio with effects (AVAudioPlayer, AVAudioEngine). The six different sound modulations are Slow, Fast, Chipmunk, Darth Varder, Reverb, and Echo effect.
 
  <img src="ScreenShots/IMG_0219.PNG" height="500">  <img src="ScreenShots/IMG_0223.PNG" height="500">  <img src="ScreenShots/IMG_0225.PNG" height="500">
 
