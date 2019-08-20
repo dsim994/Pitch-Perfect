@@ -3,6 +3,8 @@
 //  Pitch Perfect SubmissionUITests
 //
 //  Created by Dylan Simerly on 3/20/16.
+//  Copyright © 2016 dylansimerly. All rights reserved.
+
 
 import XCTest
 

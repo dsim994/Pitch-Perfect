@@ -3,6 +3,7 @@
 //  Pitch Perfect Submission
 //
 //  Created by Dylan Simerly on 3/21/16.
+//  Copyright © 2016 dylansimerly. All rights reserved.
 
 
 import UIKit
@@ -18,7 +19,6 @@ class PlaySoundsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     // Initalize Audio Player
         audioPlayer = try!AVAudioPlayer(contentsOf: receivedAudio.filePathUrl as URL)
         audioPlayer.enableRate=true;

@@ -3,7 +3,7 @@
 //  Pitch Perfect Submission
 //
 //  Created by Dylan Simerly on 3/21/16.
-
+//  Copyright © 2016 dylansimerly. All rights reserved.
 
 import Foundation
 

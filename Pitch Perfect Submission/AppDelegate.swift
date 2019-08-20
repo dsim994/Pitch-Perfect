@@ -2,7 +2,8 @@
 //  AppDelegate.swift
 //  Pitch Perfect Submission
 //
-//  Created by Dylan Simerly on 3/20/16.
+//  Created by Dylan Simerly on 3/10/16.
+//  Copyright © 2016 dylansimerly. All rights reserved.
 
 
 import UIKit
